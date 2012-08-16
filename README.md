@@ -1,0 +1,1 @@
+Welcome to the phpSec handbook. These pages will bring you from a phpSec noob, to expert in no time. You can read it from start to end, or you can use it as a quick reference guide. Use the menu to the right, or the links a the bottom, to navigate around.
