@@ -11,7 +11,7 @@ The following modules require a configured store:
   * Session
   * Token
 
-If you want full phpSec functionality you need to configure the store. This is done with the phpSec\Common\Core::setStore() method. The store is defined as a string with the storage method followed by a colon (:), and the storage destination. So if you want to save your data using flat files to */var/www/phpSec/data* the following example would be correct.
+If you want full phpSec functionality you need to configure the store. This is done with the *phpSec\Common\Core::setStore()* method. The store is defined as a string with the storage method followed by a colon (:), and the storage destination. So if you want to save your data using flat files to */var/www/phpSec/data* the following example would be correct.
 
     phpSec\Common\Core::setStore('filesystem:/var/www/phpSec/data');
 
