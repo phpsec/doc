@@ -46,7 +46,7 @@ To tell phpSec to use mySQL, you will have to call the *\phpSec\Common\Core::set
       'username=myuser;' .
       'password=mypass';
     
-    \phpSec\Common\Core::setStore($dsn);    
+    \phpSec\Common\Core::setStore($dsn);
 
 The above is an example of how your string may look like. The string consists of several configuration opions and their values. The following options are available and all of them are required. The order is not important.
 
@@ -80,6 +80,5 @@ The above is an example of how your string may look like. The string consists of
     </tr>
   </tbody>
 </table>
-
 
 
