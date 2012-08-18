@@ -1,9 +1,4 @@
-#### Requirements ####
- * The following classes is required.
-
-    * \phpSec\Common\Core
-    * \phpSec\Crypt\Rand
-    * \phpSec\Crypt\Hash
+**This requires a configured store for phpSec.**
 
 [One time passwords (OTP)](http://en.wikipedia.org/wiki/One-time_password) is a password that is valid for only one login session or transaction. It can be used for [multi-factor authentication](http://en.wikipedia.org/wiki/Multi-factor_authentication) or lost password recovery. phpSec provides a class (\phpSec\Auth\Otp) for creating and validating passwords, but the [delivery method](http://en.wikipedia.org/wiki/One-time_password#Methods_of_delivering_the_OTP) must be implemented separately.
 

@@ -1,8 +1,3 @@
-#### Requirements ####
- * The following classes is required.
-
-    * \phpSec\Crypt\Rand
-
 [YubiKey](http://www.yubico.com/yubikey) is the leading one time password token for simple, open online identity protection, and with the help of phpSec your users can be using their Yubikey for authentication in your application.
 
 ### Getting ready ###
