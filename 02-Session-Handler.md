@@ -1,5 +1,11 @@
 The phpSec session handler is an advanced session handler that changes the way session data is handled by the web server. The phpSec session handler has a number of advantages over the regular PHP session handler.
 
+#### Requirements ####
+    *  Configured store
+    * \phpSec\Common\Core
+    * \phpSec\Crypt\Crypto
+    * \phpSec\Crypt\Rand
+
 ### Hard to guess session ID ###
 The same session ID is only used once. This makes session hijacking harder. The session ID is a 128 byte string, that makes it just about impossible to guess a session ID.
 
