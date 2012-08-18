@@ -1,3 +1,9 @@
+#### Requirements ####
+ * The following classes is required.
+
+    * \phpSec\Common\Core
+    * \phpSec\Crypt\Rand
+
 Encrypting data in PHP can be done easy with phpSec. phpSec implements symmetric encryption using the mcrypt library, end is extremely easy to use.
 
 ### Quick example ###

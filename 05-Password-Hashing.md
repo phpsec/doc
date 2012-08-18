@@ -1,3 +1,9 @@
+#### Requirements ####
+ * The following classes is required.
+
+    * \phpSec\Crypt\Crypto
+    * \phpSec\Crypt\Rand
+
 Safe storage of your users password is an important step to increase the security of your web-application. phpSec implements [bcrypt](http://en.wikipedia.org/wiki/Bcrypt), [sha2](http://en.wikipedia.org/wiki/SHA-2) and [pbkdf2](http://en.wikipedia.org/wiki/PBKDF2) to protect your users passwords from rainbow tables and brute force attacks in case they are compromised. You can read more about this [here](http://codahale.com/how-to-safely-store-a-password/).
 
 phpSec creates salted hashes using the very well prooven [crypt()](http://en.wikipedia.org/wiki/Crypt_(Unix)) function. The crypt() function is available on virtually any platform. This means that a password hashed with phpSec could be validated on almost any system without any effort at all.

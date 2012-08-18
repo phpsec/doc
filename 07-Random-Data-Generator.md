@@ -1,3 +1,8 @@
+#### Requirements ####
+ * The following classes is required.
+
+    * \phpSec\Common\Core
+
 Random isn't always random enough. The built in [random functions in PHP](http://php.net/manual/en/function.mt-rand.php) may be good enough for displaying a random quote, or a random image. But when it comes to generating random data for use in encryption keys or other security related things the pseudo random generator provided by phpSec is preferable.
 
 phpSec provides you with a number of different methods of collecting random data. All of them uses the same pseudo random generator, the only difference is how they return the data.

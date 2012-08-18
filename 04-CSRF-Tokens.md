@@ -1,3 +1,10 @@
+#### Requirements ####
+ * This Class requires a configured store for phpSec.
+ * The following classes is required.
+
+    * phpSec\Common\Cache
+    * phpSec\Crypt\Rand
+
 Cross Site Request Forgery (CSRF) is a attack method where the victim already has authenticated to a site, and the attacker uses this valid session to trick the user into making a request without his knowledge.
 
 There are several ways to protect a site against CSRF but the most common is to use one-time tokens to validate that the request is not coming from a third party site, or happening without the knowledge of the user. You can read more about CSRF at Wikipedia.
