@@ -8,6 +8,7 @@ The first one is a basic filter (\phpSec\Text\Filter::f()), and the second one i
  * **escapeAll:** HTML and special characters is escaped from the string before it is inserted.
  * **escape:** Only HTML is escaped from the string. Special characters is kept as is *(default)*.
  * **url:** Encode a string according to RFC 3986 for use in a URL.
+ * **filename:** Escape a string so it's safe to be used as filename.
 
 The following example will strip all HTML from a string.
 
