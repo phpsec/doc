@@ -16,16 +16,35 @@ To create a salted hash we use \phpSec\Crypt\Hash::create(). It takes just one a
 The above code will output something like: *$pbkdf2$c=8192&dk=128&f=sha256$cSgQjF7RNrc0c(...)3ZHdrug0kd/ttLCbiH8fh4sucFK+GEI9ITYBXvNt3oYepK0MXxzjGxhcUg4UxE1yA1pRhuIhZ2KamDduyz+A==*
 
 This value can then be stored in a database for validation at a later time.
+phpSec is able to create the following hash types (see below how to change hash type):
+
+* BCrypt
+* Drupal 7.x
+* PBKDF2
+* SHA256 (crypt()'s implementation)
+* SHA512 (crypt()'s implementation)
 
 Validating passwords
 --------------------
 
-When validating password we use \phpSec\Crypt\Hash::check(). This method takes two arguments. The first is the password we want to check, and the second is the hash we created before. \phpSec\Crypt\Hash::check() will atomatically detect the method used to create the hash.
+When validating password we use \phpSec\Crypt\Hash::check(). This method takes two arguments. The first is the password we want to check, and the second is the hash we created before. \phpSec\Crypt\Hash::check() will automatically detect the method used to create the hash.
 
     <?php
     if(\phpSec\Crypt\Hash::check($_POST['password'], $hash)) {
       echo "Valid password";
     }
+
+Since phpSec is able to validate more hash types than it can generate, to allow a more transparent change from for example md5 to BCrypt. phpSec is able to detect and validate the following hash types:
+
+* BCrypt
+* Drupal 7.x
+* PBKDF2
+* SHA256 (crypt()'s implementation)
+* SHA512 (crypt()'s implementation)
+* MD5
+* SHA1
+* SHA256
+* SHA512
 
 Changing hash method
 --------------------
@@ -48,6 +67,7 @@ There are several options you could use to tune phpsecHash to work the way you w
 Please note that as shown in the example above you need to set *\phpSec\Crypt\Hash::$_method* to either:
 
 * \phpSec\Crypt\Hash::BCRYPT
+* \phpSec\Crypt\Hash::DRUPAL
 * \phpSec\Crypt\Hash::PBKDF2
 * \phpSec\Crypt\Hash::SHA256
 * \phpSec\Crypt\Hash::SHA512
