@@ -1,4 +1,4 @@
-phpSec manual
+﻿phpSec manual
 =============
 **This manual is for phpSec version: 0.4.x**
 
@@ -15,3 +15,4 @@ Contents
  * [One Time Password](https://github.com/phpsec/doc/blob/master/08-One-Time-Passwords.md)
  * [Yubikey Authentication](https://github.com/phpsec/doc/blob/master/09-Yubikey-Authentication.md)
  * [Authy Authentication](https://github.com/phpsec/doc/blob/master/10-Authy-Authentication.md)
+ * [Google Authentication](https://github.com/phpsec/doc/blob/master/11-Google-Authentication.md)
