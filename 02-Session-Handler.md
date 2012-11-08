@@ -13,5 +13,13 @@ To enable the phpSec session handler all you have to do is to configure the phpS
 
     \phpSec\Common\Session::init(true);
 
-The argument passed to Session::init() tells phpSec to regenerate the session ID. This feature can cause problems on Ajax requests, and could be set to false if you want.
+The argument passed to Session::init() tells phpSec to regenerate the session ID or not.
 Please note that you should *not* call `session_start()`, since this will cause problems.
+
+### A note on Ajax requests ###
+Sometimes if multiple requests are made at the same time, you can experience that the session is reset. This is due to the generation of new session id's.
+If you experience problems you can try to initialize the session handler with session id regeneration set to false.
+
+    \phpSec\Common\Session::init(false);
+
+This is not recommended for all page requests but could be used on for example Ajax requests.
