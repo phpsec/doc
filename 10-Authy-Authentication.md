@@ -1,3 +1,6 @@
+Authy Authentication
+====================
+
 Authy is a simple API to add two-factor authentication to your website or app. Before you start implementing Authy please read trough the documentation at [their website](https://authy.com/).
 
 ### Getting Started ###

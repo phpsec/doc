@@ -1,3 +1,6 @@
+Session handler
+===============
+
 **This requires a configured store for phpSec.**
 
 The phpSec session handler is an advanced session handler that changes the way session data is handled by the web server. The phpSec session handler has a number of advantages over the regular PHP session handler.

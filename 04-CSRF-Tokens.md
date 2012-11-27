@@ -1,5 +1,7 @@
-**This requires a configured store for phpSec.**
+CSRF tokens
+===========
 
+**This requires a configured store for phpSec.**
 
 Cross Site Request Forgery (CSRF) is a attack method where the victim already has authenticated to a site, and the attacker uses this valid session to trick the user into making a request without his knowledge.
 
@@ -11,6 +13,7 @@ phpSec contains two static methods to help you protect your site against CSRF at
 
 Take the following example.
 
+    <?php
     if(isset($_POST['do'])) {
       if(\phpSec\Common\Token::validate('myform', $_POST['token'])) {
         echo "Valid token!";

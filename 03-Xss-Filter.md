@@ -1,3 +1,6 @@
+XSS filter
+==========
+
 The phpSec XSS Filter provides two methods of safely presenting user supplied data on a web page.
 
 The first one is a basic filter (\phpSec\Text\Filter::f()), and the second one is a bit more advanced (\phpSec\Text\Filter::t()). \phpSec\Text\Filter::f() is used to filter a string, while \phpSec\Text\Filter::t() can be used to create longer texts, using different filters.
@@ -49,4 +52,5 @@ Creating safe URLs with phpSec
       array("&q" => "this is a query&amp")
     );
 
-Will output: `http://www.example.com/q=this%20is%20a%20query%2`
+Will output:
+`http://www.example.com/q=this%20is%20a%20query%2`

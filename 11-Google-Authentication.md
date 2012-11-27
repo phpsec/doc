@@ -1,3 +1,6 @@
+Google Authenticator
+====================
+
 [Google Authenticator](http://en.wikipedia.org/wiki/Google_Authenticator) is a Time based One Time Password (TOTP) based on RFC 4226 which is initialised using a 16 digit Base32 (RFC 4648) encoded secret.
 The secret can be entered into the Google Authenticator app manually by keyboard, or by scanning a QR code.
 To use Google authentiator you need to have [configured a store](http://phpseclib.com/manual/gettingstarted) for phpSec.

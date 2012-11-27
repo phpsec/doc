@@ -1,15 +1,18 @@
+Downloading and installing
+==========================
+
 phpSec is now a PSR-0 compatible library. this means that it can easilly be installed and loaded using [Composer](http://getcomposer.org/doc/00-intro.md).
 You can also install phpSec manually, or using Git.
 
 ### Installing using [Composer](http://getcomposer.org/doc/00-intro.md)
 To install using Composer just add phpSec to your composer.json file in your project directory.
-```
-{
-    "require": {
+
+    {
+      "require": {
         "phpsec/phpsec":"0.4.*"
+      }
     }
-}
-```
+
 
 Then all you need to do is to run `$ php composer.phar install` .
 phpSec can then be loaded using the Composer autoloader.
@@ -28,9 +31,9 @@ All you have to do is to register the *phpSec* namespace to the *phpSec/lib* fol
 If you want to add an autoloader to your project there is [one example here](http://gist.github.com/221634).
 This can be initialized like this:
 
-```php
-<?php
-require_once 'SplClassLoader.php';
-$classLoader = new SplClassLoader('phpSec', '/var/www/vendor/phpSec/lib');
-$classLoader->register();
-```
+
+    <?php
+    require_once 'SplClassLoader.php';
+    $classLoader = new SplClassLoader('phpSec', '/var/www/vendor/phpSec/lib');
+    $classLoader->register();
+

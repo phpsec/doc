@@ -1,3 +1,6 @@
+Command Execution
+=================
+
 The Exec class allows you to execute commands in a PDO like way.
 It also provides more detailed output from the executed command, and allows you to pass data to the command after it is executed.
 The Exec class only has one public method: [run()](https://phpseclib.com/api/phpsec/lib--phpSec--Common--Exec.php/function/Exec%3A%3Arun).
