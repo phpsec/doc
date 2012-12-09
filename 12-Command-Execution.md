@@ -26,7 +26,7 @@ Exec::run() will return an array containing three values:
       )
     ));
 
-Thsi example will output something like this:
+This example will output something like this:
 
     Array
     (

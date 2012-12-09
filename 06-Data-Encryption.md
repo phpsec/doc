@@ -28,7 +28,7 @@ If you want to generate a 32 byte binary key you could use phpSec Rand:
 
 Note that a binary key often needs special handling when storing. Base64 encoding can often be usefull.
 
-### Encrypting data. """
+### Encrypting data. ###
 This is the easy part. To encrypt your data just pass the data you want to encrypt and the key to \phpSec\Crypt\Crypto::encrypt().
 
     <?php
