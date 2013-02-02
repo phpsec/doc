@@ -14,6 +14,7 @@ Encrypting data in PHP can be done easy with phpSec. phpSec implements symmetric
 
 ### Setting up algorithms and modes. ###
 The default encryption algorithm used by phpSec is Rijndael 256 in CTR mode. This should be fine in most cases, but you can change this if you want to.
+
     <?php
     \phpSec\Crypt\Crypto::$_algo = 'rijndael-256';
     \phpSec\Crypt\Crypto::$_mode = 'ctr';
